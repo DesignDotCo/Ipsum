@@ -1,0 +1,15 @@
+<div class="alert alert-error" role="alert" ng-if="error.mysql">
+    Error {{ error.message }}  
+</div>
+
+<h4 class="text-center"> {{ 'CONTRACT' | translate }} </h4>
+
+<div network-contract></div>
+
+<br>
+<p class="text-center" translate translate-values="{{ network }}">
+   TEXT_ACCEPT 
+</p>
+<div class="col-lg-12 text-center">
+    <a class="btn btn-primary" ng-click="saveUser();"> {{ 'ACCEPT' | translate }}</a> 
+</div>

@@ -1,0 +1,26 @@
+{
+  "name": "Ipsum",
+  "version": "0.0.1",
+  "authors": [
+    "martialdidit <martial.puygrenier@gmail.com>"
+  ],
+  "github": "https://github.com/martialdidit/Ipsum",
+  "wiki": "https://github.com/martialdidit/Ipsum/wiki",
+  "description": "Application to register YouTube Channel on your Network",
+  "keywords": [
+    "YouTube",
+    "Network",
+    "Channel"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular-bootstrap": "~0.11.0",
+    "angular": "~1.2.21",
+    "bootstrap": "~3.2.0",
+    "angular-resource": "~1.2.19",
+    "angular-route": "~1.2.19",
+    "angular-translate": "~2.2.0",
+    "angular-translate-loader-url": "~2.2.0",
+    "angular-translate-loader-static-files": "~2.2.0"
+  }
+}

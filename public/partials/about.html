@@ -1,0 +1,20 @@
+<div class="view">
+    <p class="text-center">
+        <strong>Ipsum</strong><br>
+        {{ 'VERSION_IPSUM' | translate }} <a href="{{ ipsum.link }}">{{ ipsum.version }}</a> {{ 'OF' | translate }} Ipsum.<br>
+        <br>
+        <strong>{{ 'AUTHOR' | translate }}</strong><br>
+        <a href="https://twitter.com/martialdidit">Martialdidit</a><br><br>
+        
+        <strong>Description </strong><br>
+        <span translate translate-values="{{ ipsum }}">
+            ABOUT_APP
+        </span>
+        <br><br>
+    
+        <strong>Start </strong><br>
+        <span translate translate-values="{{ ipsum }}">
+            START
+        </span>
+    </p>
+</div>

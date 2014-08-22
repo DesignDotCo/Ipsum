@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+    background-color: #535a6c;
+}
+
+#wrap > .container {
+    padding: 80px 0 0 0;
+}
+
+.view {
+    background-color:white;
+    padding: 20px;
+}
+
+.active {
+    background-color: #5cb85c;
+}
+
+.contract {
+    min-height: 250px;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.disconnect {
+    margin-top: 20px;
+}
+
+.rights {
+    color: white;
+    font-size: 16px;
+}
+
+
+.ng-invalid.ng-dirty {
+    border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+    border-color: rgb(55, 185, 55);
+}

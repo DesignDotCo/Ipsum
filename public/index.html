@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="ipsum">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1">
+    <title>Ipsum</title>
+    <link href="ressources/img/ico.png" rel="icon" type="image/png"> 
+
+    <!-- Bootstrap -->
+    <link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- Custom styles for this template -->
+    <link href="ressources/css/ipsum.css" rel="stylesheet"> 
+
+</head>
+<body>
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavCtrl">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-caerop">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#/apply">Ipsum</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-caerop">
+                    <ul class="nav navbar-nav">
+                        <li ng-class="{'active':!currentPage || currentPage == 'apply'}"><a href="#/apply">{{ 'NAV_HOME' | translate }}</a></li>
+                        <li ng-class="{'active':currentPage == 'about'}"><a href="#/about">{{ 'NAV_ABOUT' | translate }}</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ 'LANGUAGE' | translate }} <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" >
+                                <li ng-repeat="language in languages" ng-show="language_d.active != language.abv">
+                                    <a href="#/{{ currentPage }}" ng-click="changeLanguage(language.abv)">{{ language.name | translate }}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- .navbar-collapse -->
+            </div><!-- container -->
+        </nav>
+
+        <div class="container" ng-view></div>
+
+    </div><!-- wrap -->
+
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="components/angular/angular.min.js"></script>
+    <script src="components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="components/angular-resource/angular-resource.min.js"></script>
+    <script src="components/angular-route/angular-route.min.js"></script> 
+    <script src="components/angular-translate/angular-translate.min.js"></script> 
+    <script src="components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>   
+    
+    <script src="app/app.js"></script>
+    <script src="app/controller/NavCtrl.js"></script>
+    <script src="app/controller/ApplyCtrl.js"></script>
+    <script src="app/controller/ChannelCtrl.js"></script>
+    <script src="app/controller/AboutCtrl.js"></script>
+    <script src="app/directive/applystart.js"></script>
+    <script src="app/directive/applystepone.js"></script>
+    <script src="app/directive/applysteptwo.js"></script>
+    <script src="app/directive/applystepthree.js"></script>
+    <script src="app/directive/networkcontract.js"></script>
+    <script src="app/service/gapsi.js"></script>
+    <script src="app/service/shareProperty.js"></script>
+
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
+</body>
+</html>
+
