@@ -101,6 +101,35 @@ var APIKEY = "YOUR API KEY";
 You can follow this tutorial for more customisation : https://developers.google.com/accounts/docs/OAuth2Login
 
 
+## Add Apache subdomain or alias : 
+
+If you want user access to this application with custom url like : apply.yourdomain.com
+
+* Alias :
+
+```
+Alias /ipsum/ "path/Ipsum/public/" 
+
+<Directory "path/Ipsum/public/">
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride all
+        Order allow,deny
+    Allow from all
+</Directory>
+```
+
+* Subdomain 
+
+```
+ServerName apply.domain.com 
+
+<Directory "path/Ipsum/public/">
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride all
+        Order allow,deny
+    Allow from all
+</Directory>
+```
 
 That's all ! 
 
