@@ -40,6 +40,7 @@ app.controller('ChannelCtrl', ['$scope', 'googleService', 'shareProperty', '$htt
             
         $scope.saveUser = function () {
             $scope.user.contract = true;
+            $scope.step.three = true;
         };
 
     }
