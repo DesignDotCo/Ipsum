@@ -1,13 +1,13 @@
 app.service('googleService',  ['$http', '$rootScope', '$q', function ($http, $rootScope, $q) {
 
-    var OAUTH2_CLIENT_ID = '905270434901-a60a7kjsqb3a4f3p6hqbttg42pn5sn6v.apps.googleusercontent.com';
+    var OAUTH2_CLIENT_ID = '905270434901-jjhsbh1ft9n5nerk9caenmcrgq2dkai9.apps.googleusercontent.com';
     var OAUTH2_SCOPES    = [
         'https://www.googleapis.com/auth/yt-analytics.readonly',
         'https://www.googleapis.com/auth/youtube.readonly',
         'https://www.googleapis.com/auth/plus.login',
         'https://www.googleapis.com/auth/userinfo.email'
     ]; 
-    var APIKEY = "AIzaSyC98k4mpWw-utjQ_ovcnkkb0ZON0qlb4Ak";
+    var APIKEY = "AIzaSyC9PToc4lT33n-z6WbuesZqynf_djjVcw0";
 
     var ONE_MONTH_IN_MILLISECONDS = 1000 * 60 * 60 * 24 * 30;
     var YOUTUBE_USER              = {};
