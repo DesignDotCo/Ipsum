@@ -4,7 +4,7 @@
     "email": "test@test.com",
     "analytics": 200,
     "default_language": "en",
-    "contract": false
+    "contract": true
 }
 
 
